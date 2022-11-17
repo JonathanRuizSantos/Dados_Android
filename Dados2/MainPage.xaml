@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Dados2.MainPage" BackgroundColor="#FFFFFF">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2D5288" Padding="24" CornerRadius="0">
+            <Label Text="Juguemos a los Dados" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="¿Cuantos dados?" FontSize="Medium" Padding="30,10,30,10" HorizontalTextAlignment="Center" TextColor="Black"/>
+        <Image Source="dadosmain.png" HorizontalOptions="Center" WidthRequest="200"/>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="30" VerticalOptions="End" Padding="20">
+            <Button Text="1 Dado" BackgroundColor="#3B92B3" HorizontalOptions="Start" Clicked="BtUnDado"/>
+            <Button Text="2 Dados" BackgroundColor="#3B92B3" HorizontalOptions="Center" Clicked="BtDosDados"/>
+            <Button Text="3 Dados" BackgroundColor="#3B92B3" HorizontalOptions="End" Clicked="TresLados"/>
+        </StackLayout>
+        
+        
+        <!--StackLayout>
+            <Label Text="Inicio de Programación 02/11/2022" FontSize="Micro" TextColor="Black" HorizontalTextAlignment="Center" HorizontalOptions="Start" VerticalOptions="End"/>
+            <Label Text=" Ultima Modificacion 02/11/2022" FontSize="Micro" TextColor="Black" HorizontalTextAlignment="Center" HorizontalOptions="Start" VerticalOptions="End"/>
+            <Label Text="scompu90@gmail.com" FontSize="Micro" TextColor="Black" HorizontalTextAlignment="Center" HorizontalOptions="Start" VerticalOptions="End"/>
+            <Label Text="computech, Jonathan RS." FontSize="Micro" TextColor="Black" HorizontalTextAlignment="Center" HorizontalOptions="Start" VerticalOptions="End"/>
+        </StackLayout-->
+
+    </StackLayout>
+
+</ContentPage>

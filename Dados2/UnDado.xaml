@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Dados2.UnDado" BackgroundColor="White">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#183891">
+            <StackLayout BackgroundColor="#91181a">
+                <Label Text="Jugando con un Dado" TextColor="White" FontSize="Title" HorizontalTextAlignment="Center" Padding="30" FontAttributes="Bold"/>
+            </StackLayout>
+            <StackLayout Spacing="30" Padding="30">
+                <Label Text="¿Listo/a?, ¡Mucha Suerte!" FontSize="20" HorizontalTextAlignment="Center"/>
+                <Image Source="dado.png" WidthRequest="150" HorizontalOptions="Center"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="25">
+                <Label Text="Tiro " FontSize="17"/>
+                <Label x:Name="Incremento" FontSize="17" HorizontalTextAlignment="Center" Text="0"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="25">
+                <Label Text="Dado 1 " FontSize="17"/>
+                <Label x:Name="LabelAleatorioUno" FontSize="17" HorizontalTextAlignment="Center" Text="0"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="25" Padding="26">
+                <Button Text="Tirar" Background="#188C91" Clicked="BtTirar"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
